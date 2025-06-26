@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}
+Strona Główna
+{% endblock %}
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1 class="display-6 text-dark">CeneoWebScraper</h1>
+            <p class="lead text-dark">Narzędzie do zbierania recenzji i ocen produktów z portalu Ceneo</p>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-md-12">
+            <h2 class="h3 text-dark">Cel aplikacji</h2>
+            <p class="text-dark">CeneoWebScraper to narzędzie stworzone do pozyskiwania opinii oraz ocen produktów dostępnych na stronie Ceneo. Jego zadaniem jest zapewnienie użytkownikom dostępu do szczegółowych danych na temat wybranych artykułów, takich jak średnia nota, ilość recenzji czy zestawienie zalet i wad. Dzięki temu rozwiązaniu, użytkownicy mogą sprawnie zgromadzić informacje o interesujących ich produktach i przeanalizować opinie innych kupujących, co ułatwia dokonanie przemyślanego wyboru podczas zakupów.</p>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-md-12">
+            <h2 class="h3 text-dark">Jak działa aplikacja</h2>
+            <p class="text-dark">Obsługa CeneoWebScraper jest intuicyjna. Po podaniu unikalnego identyfikatora produktu, aplikacja automatycznie pobiera komplet opinii i ocen dotyczących danego artykułu. Następnie użytkownik otrzymuje dostęp do przejrzystej tabeli z recenzjami, które można sortować i filtrować według różnych parametrów, takich jak data zakupu, ocena, autor opinii czy rekomendacja. Narzędzie pozwala także na eksport danych do pliku JSON oraz generowanie wykresów ilustrujących statystyki związane z opiniami o produkcie.</p>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-md-12">
+            <h2 class="h3 text-dark">Zastosowane biblioteki</h2>
+            <p class="text-dark">W projekcie zastosowano szereg popularnych bibliotek, które umożliwiają skuteczne pobieranie, przetwarzanie i prezentowanie danych:</p>
+            <ul class="text-dark">
+                <li><strong>Flask</strong> – lekki framework do budowy aplikacji internetowych w Pythonie, pozwalający na sprawną obsługę trasowania i żądań HTTP.</li>
+                <li><strong>Requests</strong> – narzędzie do realizacji zapytań HTTP, umożliwiające pobieranie danych ze strony Ceneo.</li>
+                <li><strong>Bootstrap</strong> – framework CSS wspierający tworzenie responsywnych i estetycznych interfejsów, dzięki czemu aplikacja działa poprawnie na różnych urządzeniach.</li>
+                <li><strong>Jinja2</strong> – silnik szablonów używany przez Flask, umożliwiający dynamiczne generowanie kodu HTML na podstawie danych z backendu.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-md-12">
+            <h2 class="h3 text-dark">Zastosowane rozwiązania</h2>
+            <p class="text-dark">W aplikacji wdrożono kilka istotnych rozwiązań wpływających na jej funkcjonalność i wygodę użytkowania:</p>
+            <ul class="text-dark">
+                <li><strong>Web Scraping</strong> – główna metoda działania polegająca na automatycznym zbieraniu danych z internetu.</li>
+                <li><strong>Sortowanie i filtrowanie danych</strong> – użytkownik może filtrować i sortować recenzje według wybranych kryteriów, takich jak data zakupu, ocena produktu czy autor opinii.</li>
+                <li><strong>Analiza danych</strong> – aplikacja generuje wykresy (kołowe, słupkowe), które obrazują rozkład rekomendacji oraz liczbę opinii w poszczególnych kategoriach ocen, co pozwala szybko zorientować się w ogólnym odbiorze produktu.</li>
+                <li><strong>Eksport danych</strong> – użytkownicy mają możliwość pobrania zebranych danych w formacie JSON, co pozwala na dalszą analizę lub archiwizację.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

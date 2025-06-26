@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}
+O Autorze
+{% endblock %}
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-12 d-flex align-items-center">
+            <div class="me-4">
+                <img src="{{ url_for('static', filename='uploads/author_photo.png') }}" alt="autor" class="img-fluid" style="width: 180px; height: auto;">
+            </div>
+            <p class="lead text-dark">
+                <strong>Wawrzyniec Trzebunia</strong> - student ANS w Nowym Targu
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="row my-4">
+        <div class="col-md-12">
+            <h2 class="h3 text-dark">Doświadczenie i projekty</h2>
+            <ul class="text-dark">
+                <li><strong>CeneoWebScraper</strong>
+                <li><strong>Sklep internetowy zielonych samochodów</strong>
+            </ul>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-md-12">
+            <h2 class="h3 text-dark">Moje zainteresowania</h2>
+            <ul class="text-dark">
+                <li><strong>Granie w komputer</strong>
+                <li><strong>Wędkowanie</strong>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

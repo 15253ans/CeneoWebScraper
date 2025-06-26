@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    color: #2d1e4a;
+    position: relative;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.01em;
+}
+
+header {
+    position: sticky;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: rgba(245, 239, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(140, 70, 255, 0.07);
+    z-index: 10;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: calc(100vh - (67px + 65px));
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+ul {
+    list-style: disc inside;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    gap: 32px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 18px 32px;
+    background: transparent;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #3a156b;
+    padding: 10px 22px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+    font-weight: 500;
+    box-shadow: 0 1px 6px rgba(100, 60, 140, 0.09);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.navigation li a:hover {
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(60, 80, 160, 0.18);
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    bottom: 0;
+    padding-bottom: 26px;
+    background: rgba(245, 239, 255, 0.85);
+    border-top: 1px solid #e1c3fc;
+}
+
+section {
+    padding: 40px 32px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #fffbe7;
+    width: 440px;
+    min-width: 320px;
+    border-radius: 32px;
+    box-shadow: 0 6px 32px rgba(140, 70, 255, 0.13);
+}
+
+.section-heading {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+    color: #7b2ff2;
+    letter-spacing: 0.03em;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    color: #185a9d;
+    font-size: 1.05em;
+}
+
+.product-list {
+    max-width: 900px;
+    width: 100vw;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: none;
+}
+
+.product-item {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 22px 24px;
+    background: #e0c3fc;
+    border-radius: 18px;
+    border: 1px solid #8ec5fc;
+    box-shadow: 0 2px 8px rgba(140, 70, 255, 0.09);
+    transition: box-shadow 0.2s;
+}
+
+.product-item:hover {
+    box-shadow: 0 6px 24px rgba(140, 70, 255, 0.16);
+}
+
+.product-item span {
+    border-radius: 50px;
+    padding: 10px 18px;
+    font-size: 1em;
+    font-weight: 600;
+    background: #f6d365;
+    color: #2d1e4a;
+}
+
+.opinions_count {
+    color: #fff;
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    font-weight: 600;
+    box-shadow: 0 1px 6px rgba(67, 206, 162, 0.13);
+}
+
+.pros_count {
+    color: #fff;
+    background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
+    font-weight: 600;
+}
+
+.cons_count {
+    color: #fff;
+    background: linear-gradient(90deg, #e96443 0%, #904e95 100%);
+    font-weight: 600;
+}
+
+.average_stars {
+    color: #fff;
+    background: linear-gradient(90deg, #7b2ff2 0%, #f357a8 100%);
+    font-weight: 600;
+}
